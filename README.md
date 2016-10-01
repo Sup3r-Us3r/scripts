@@ -1,8 +1,12 @@
-########################
-# Scripts for testing. #
-########################
+##################################################
+# Scripts for testing ▶ Click Raw to see better. #
+##################################################
 
-fb-brute.pl = Bruteforce for Facebook   ▶    hash_id_v1.1.py = Hash Identifier   ▶   painel.pl = Admin Control Panel Finder   ▶   slowloris.pl = Denial of Service   ▶   g3m = Denial of Service
+fb-brute.pl = Bruteforce for Facebook
+hash_id_v1.1.py = Hash Identifier
+painel.pl = Admin Control Panel Finder
+slowloris.pl = Denial of Service
+g3m = Denial of Service
 
 ###########################
 # How to Install and use. #
