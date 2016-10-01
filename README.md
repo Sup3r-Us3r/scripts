@@ -35,5 +35,3 @@ Install = sudo chmod +x g3m
 Use = Commands for Attack:
 $ ./g3m -h ip -T 3              #Attack private internet
 $ ./g3m -h ip -T 3 -p 80,80     #Attack websites
-
-
