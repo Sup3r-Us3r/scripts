@@ -9,7 +9,7 @@
 How to Install and use
 ----
 
-'fb-brute.pl'
+`fb-brute.pl`
 ```sh
 $ sudo chmod +x fb-brute.pl
 $ perl fb-brute.pl id-user-facebook wordlist.txt
@@ -21,20 +21,20 @@ $ sudo chmod +x hash_id_v1.1.py
 $ python2 hash_id_v1.1.py
 ``` 
 
- - painel.pl:
+`painel.pl`
 ```sh
 $ sudo chmod +x painel.pl
 $ perl painel.pl
 ```
 
- - slowloris.pl:
+`slowloris.pl`
 ```sh
 $ sudo chmod +x slowloris.pl
 $ perl slowloris.pl -dns www.target.com -port 80 -timeout 1 -num 1000 -tcpto 5
 $ perl slowloris.pl -dns IP
 ```
 
- - g3m:
+`g3m`
 ```sh
 $ sudo chmod +x g3m
 $ ./g3m -h ip -T 3              #Attack private internet
