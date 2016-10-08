@@ -9,13 +9,13 @@
 How to Install and use
 ----
 
- - fb-brute.pl:
+'fb-brute.pl'
 ```sh
 $ sudo chmod +x fb-brute.pl
 $ perl fb-brute.pl id-user-facebook wordlist.txt
 ```
 
-`hash_id_v1.1.py`:
+`hash_id_v1.1.py`
 ```sh
 $ sudo chmod +x hash_id_v1.1.py
 $ python2 hash_id_v1.1.py
