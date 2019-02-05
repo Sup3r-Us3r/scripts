@@ -1,0 +1,39 @@
+IMPORTE SOMENTE ANOMALIA TEMPORÁRIA SEGUINDO ESSES CRITÉRIOS:
+-------------------------------------------------------------
+
+GSM que não se repete e tem o STATUS = "ANOMALIA TEMPORÁRIA" = Importe
+ex1:
+3141461575	PRIMEIRA ATIVAÇÃO_SEM VENDA DE APARELHO	 21/11/2018	 23/11/2018	 27/11/2018	ANOMALIA TEMPORÁRIA
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GSM que se repete, e tiver em uma das linhas o STATUS = "ANOMALIA DEFINITIVA", "LIBERADO" e seu MOTIVO_ENVIO for igual em ambos = Não importe
+ex1:
+31973660683	TROCA DE APARELHOS_REEMBOLSO - REBATE	 09/11/2018	 19/11/2018	 22/11/2018	LIBERADO
+31973660683	TROCA DE APARELHOS_REEMBOLSO - REBATE	 09/11/2018	 09/11/2018	 16/11/2018	ANOMALIA TEMPORÁRIA
+
+ex2:
+31975651223	MIGRAÇÃO PRÉ / PÓS_SEM VENDA DE APARELHO	 23/10/2018	 23/11/2018	 26/11/2018	ANOMALIA DEFINITIVA
+31975651223	MIGRAÇÃO PRÉ / PÓS_SEM VENDA DE APARELHO	 23/10/2018	 06/11/2018	 09/11/2018	ANOMALIA TEMPORÁRIA
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GSM que se repete e tiver em uma das linhas o STATUS = "PENDENTE", "EM ANÁLISE" e seu MOTIVO_ENVIO for igual em ambos = Não importe
+ex1:
+31975449670	PRIMEIRA ATIVAÇÃO_REEMBOLSO - ADM	 23/11/2018	 28/11/2018			PENDENTE
+31975449670	PRIMEIRA ATIVAÇÃO_REEMBOLSO - ADM	 23/11/2018	 24/11/2018	 27/11/2018	ANOMALIA TEMPORÁRIA
+
+ex2:
+31994865972	PRIMEIRA ATIVAÇÃO_REEMBOLSO - ADM	 22/11/2018	 27/11/2018	 29/11/2018	EM ANÁLISE
+31994865972	PRIMEIRA ATIVAÇÃO_REEMBOLSO - ADM	 22/11/2018	 22/11/2018	 26/11/2018	ANOMALIA TEMPORÁRIA
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GSM que se repete e tiver o STATUS = "PENDENTE", "EM ANÁLISE" mas o seu MOTIVO_ENVIO for diferente, importe somente a linha que tiver o STATUS igual a "ANOMALIA TEMPORÁRIA"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GSM que for repetido e tiver em ambos o STATUS = "ANOMALIA TEMPORÁRIA" e seu MOTIVO_ENVIO for igual, importe apenas um cuja DATA_ALTERACAO for mais recente
+ex1:
+31975605979	PRIMEIRA ATIVAÇÃO_SEM VENDA DE APARELHO	 03/11/2018	 23/11/2018	 27/11/2018	ANOMALIA TEMPORÁRIA *No caso esse por exemplo.
+31975605979	PRIMEIRA ATIVAÇÃO_SEM VENDA DE APARELHO	 03/11/2018	 14/11/2018	 19/11/2018	ANOMALIA TEMPORÁRIA
+31975605979	PRIMEIRA ATIVAÇÃO_SEM VENDA DE APARELHO	 03/11/2018	 08/11/2018	 12/11/2018	ANOMALIA TEMPORÁRIA
